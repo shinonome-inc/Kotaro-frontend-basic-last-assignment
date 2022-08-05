@@ -13,28 +13,33 @@
   left: 20px;
   top: 20px;
   .text-title {
-    width: 287px;
-    height: 54px;
     font-family: $fontfamily-mincho;
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
-    line-height: 54px;
-
     display: flex;
     align-items: center;
     text-align: center;
-
     color: #000;
-
     flex: none;
     order: 0;
     flex-grow: 0;
+
+    @media screen and(max-width:$breakpoint-md) {
+      width: 160px;
+      height: 30px;
+      font-size: $fontsize-l;
+      line-height: 30px;
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+      width: 287px;
+      height: 54px;
+      font-size: $fontsize-xl;
+      line-height: 54px;
+    }
   }
   .explanation-text {
     width: 84px;
-    height: $fontsize-xl;
-
     font-family: $fontfamily-gothic;
     font-style: normal;
     font-weight: 400;
@@ -49,59 +54,15 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-  }
-}
 
-.message-md {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 32px 20px;
+    @media screen and (min-width: $breakpoint-md) {
+      height: 36px;
+      line-height: 36px;
+    }
 
-  position: absolute;
-  width: 200px;
-  height: 128px;
-  left: 418px;
-  top: 20px;
-  .text-title {
-    width: 160px;
-    height: 30px;
-
-    font-family: $fontfamily-mincho;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: $black;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-  .explanation-text {
-    width: 84px;
-    height: 28px;
-
-    font-family: $fontfamily-gothic;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 28px;
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: $black;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    @media screen and(max-width:$breakpoint-md) {
+      height: 28px;
+      line-height: 28px;
+    }
   }
 }
