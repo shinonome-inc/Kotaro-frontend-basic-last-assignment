@@ -1,15 +1,40 @@
 @use "../../variables" as *;
 
 .button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   background-color: $black;
-  transition: all 0.2s ease;
   padding: 0px $fontsize-m;
-  width: 200px;
-  height: 55px;
+
+  transition: all 0.2s ease;
+
+  position: absolute;
   color: $white;
   align-items: center;
+  border: none;
   cursor: pointer;
+  font-size: $fontsize-s;
+
   &:hover {
     background-color: $orange_bistre;
+    color: inherit;
+    color: $white;
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    width: 200px;
+    height: 55px;
+  }
+
+  @media screen and(max-width:$breakpoint-lg) {
+    width: 180px;
+    height: 45px;
+  }
+
+  @media screen and(max-width:$breakpoint-md) {
+    width: 150px;
+    height: 55px;
   }
 }
