@@ -1,1 +1,37 @@
 @use "../../variables" as *;
+
+.card-image {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+}
+.card-text {
+  width: 91px;
+  height: 29px;
+  font-family: $fontfamily-mincho;
+  font-style: normal;
+  font-weight: 700px;
+  font-size: $fontsize-l;
+  line-height: 29px;
+
+  display: flex;
+  align-items: center;
+
+  color: $orange_bistre;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.triangle {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 0px;
+  top: 0px;
+
+  background: $white;
+}
