@@ -1,25 +1,18 @@
 @use "../../variables" as *;
 
-.message-lg {
+.message {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 52px 20px;
 
-  position: absolute;
-  width: 327px;
-  height: 204px;
-  left: 20px;
-  top: 20px;
   .text-title {
     font-family: $fontfamily-mincho;
-    font-style: normal;
-    font-weight: 400;
     display: flex;
     align-items: center;
     text-align: center;
-    color: #000;
+    color: $black;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -39,21 +32,14 @@
     }
   }
   .explanation-text {
-    width: 84px;
     font-family: $fontfamily-gothic;
     font-style: normal;
     font-weight: 400;
     font-size: $fontsize-s;
 
-    display: flex;
-    align-items: center;
     text-align: center;
 
-    color: #000;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    color: $black;
 
     @media screen and (min-width: $breakpoint-md) {
       height: 36px;
