@@ -6,7 +6,7 @@
   background-color: $black;
   padding: 0px 16px;
 
-  transition: all 0.2s 0s ease;
+  transition: all 0.2s ease;
 
   position: absolute;
   color: $white;
@@ -20,12 +20,7 @@
     text-decoration: none;
   }
 
-  @media screen and (max-width: $breakpoint-xl) {
-    width: 200px;
-    height: 55px;
-  }
-
-  @media screen and(max-width:$breakpoint-lg) {
+  @media screen and(min-width:$breakpoint-md) {
     width: 180px;
     height: 45px;
   }
