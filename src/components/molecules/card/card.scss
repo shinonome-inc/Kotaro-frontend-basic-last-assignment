@@ -26,6 +26,21 @@
   flex-grow: 0;
 }
 
+.card-title {
+  position: absolute;
+  width: 93px;
+  height: 29px;
+  left: 4px;
+  top: 0px;
+
+  font-family: $fontfamily-gothic;
+  font-style: normal;
+  font-weight: 700px;
+  font-size: 20px;
+  order: 0;
+  flex-grow: 0;
+}
+
 .triangle {
   position: absolute;
   width: 150px;
@@ -33,5 +48,10 @@
   left: 0px;
   top: 0px;
 
-  background: $white;
+  background: transparent;
+
+  border-top: 50px solid $white;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 50px solid $white;
 }
