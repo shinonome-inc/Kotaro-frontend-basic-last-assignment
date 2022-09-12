@@ -5,10 +5,7 @@
   justify-content: center;
   background-color: $black;
   padding: 0px 16px;
-
   transition: all 0.2s ease;
-
-  position: absolute;
   color: $white;
   align-items: center;
   cursor: pointer;
@@ -20,7 +17,12 @@
     text-decoration: none;
   }
 
-  @media screen and(min-width:$breakpoint-md) {
+  @media screen and(max-width:$breakpoint-xl) {
+    width: 200px;
+    height: 55px;
+  }
+
+  @media screen and(max-width:$breakpoint-lg) {
     width: 180px;
     height: 45px;
   }
