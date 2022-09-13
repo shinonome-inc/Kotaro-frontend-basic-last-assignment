@@ -17,18 +17,18 @@
     text-decoration: none;
   }
 
-  @media screen and(max-width:$breakpoint-xl) {
-    width: 200px;
+  @media screen and(min-width:$breakpoint-sm) {
+    width: 150px;
     height: 55px;
   }
 
-  @media screen and(max-width:$breakpoint-lg) {
+  @media screen and(min-width:$breakpoint-md) {
     width: 180px;
     height: 45px;
   }
 
-  @media screen and(max-width:$breakpoint-md) {
-    width: 150px;
+  @media screen and(min-width:$breakpoint-lg) {
+    width: 200px;
     height: 55px;
   }
 }
