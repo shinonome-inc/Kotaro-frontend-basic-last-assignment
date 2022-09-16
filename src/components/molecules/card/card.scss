@@ -1,57 +1,60 @@
 @use "../../variables" as *;
 
-.card-image {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-}
-.card-text {
-  width: 91px;
-  height: 29px;
-  font-family: $fontfamily-mincho;
-  font-style: normal;
-  font-weight: 700px;
-  font-size: $fontsize-l;
-  line-height: 29px;
+.card-field {
+  .card-image {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+  }
+  .card-title {
+    position: absolute;
+    width: 93px;
+    height: 29px;
+    left: 6px;
+    top: 0px;
 
-  display: flex;
-  align-items: center;
+    font-family: $fontfamily-gothic;
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 20px;
+    order: 0;
+    flex-grow: 0;
+  }
+  .triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0px;
+    top: 0px;
 
-  color: $orange_bistre;
+    background: transparent;
 
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.card-title {
-  position: absolute;
-  width: 93px;
-  height: 29px;
-  left: 4px;
-  top: 0px;
-
-  font-family: $fontfamily-gothic;
-  font-style: normal;
-  font-weight: 700px;
-  font-size: 20px;
-  order: 0;
-  flex-grow: 0;
+    border-top: 100px solid $white;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-left: 100px solid $white;
+  }
 }
 
-.triangle {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  left: 0px;
-  top: 0px;
-
-  background: transparent;
-
-  border-top: 50px solid $white;
-  border-right: 50px solid transparent;
-  border-bottom: 50px solid transparent;
-  border-left: 50px solid $white;
+.text-field {
+  // width: 224px;
+  // height: 183px;
+  // background-color: white;
+  // order: 1;
+  .card-text {
+    width: 91px;
+    height: 29px;
+    font-family: $fontfamily-mincho;
+    font-style: normal;
+    font-weight: 700px;
+    font-size: $fontsize-l;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    color: $orange_bistre;
+    flex: none;
+    order: 0;
+  }
 }
