@@ -1,27 +1,6 @@
 @use "../../variables" as *;
 
-.card-field {
-  .card-image {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-  }
-  .card-title {
-    position: absolute;
-    width: 93px;
-    height: 29px;
-    left: 6px;
-    top: 0px;
-
-    font-family: $fontfamily-gothic;
-    font-style: normal;
-    font-weight: 700px;
-    font-size: 20px;
-    order: 0;
-    flex-grow: 0;
-  }
+.card-self {
   .triangle {
     position: absolute;
     width: 0;
@@ -35,26 +14,24 @@
     border-right: 100px solid transparent;
     border-bottom: 100px solid transparent;
     border-left: 100px solid $white;
+    .card-title-self {
+      display: block;
+      width: 91px;
+      height: 29px;
+      font-family: $fontfamily-gothic;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 29px;
+      color: $orange_bistre;
+      padding: 0px 0px 0px 2px;
+    }
   }
-}
-
-.text-field {
-  // width: 224px;
-  // height: 183px;
-  // background-color: white;
-  // order: 1;
-  .card-text {
-    width: 91px;
-    height: 29px;
-    font-family: $fontfamily-mincho;
-    font-style: normal;
-    font-weight: 700px;
-    font-size: $fontsize-l;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    color: $orange_bistre;
-    flex: none;
-    order: 0;
+  .card-body-self {
+    .card-text-self {
+      width: 160px;
+      height: 34px;
+      font-family: $fontfamily-gothic;
+    }
   }
 }
