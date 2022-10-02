@@ -28,8 +28,8 @@
     font-style: normal;
     font-size: $fontsize-s;
     color: $black;
-    height: 36px;
     line-height: 36px;
+    margin: 0%;
 
     @media screen and(max-width:$breakpoint-lg) {
       height: 28px;
