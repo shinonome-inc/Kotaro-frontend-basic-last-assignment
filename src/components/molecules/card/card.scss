@@ -14,18 +14,22 @@
     border-right: 100px solid transparent;
     border-bottom: 100px solid transparent;
     border-left: 100px solid $white;
-    .card-title-self {
-      display: block;
-      width: 91px;
-      height: 29px;
-      font-family: $fontfamily-gothic;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 29px;
-      color: $orange_bistre;
-      padding: 0px 0px 0px 2px;
-    }
+  }
+  .card-title-self {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left: 4px;
+    top: 0px;
+    width: 93px;
+    height: 29px;
+    font-family: $fontfamily-gothic;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    color: $orange_bistre;
+    padding: 0px 0px 0px 2px;
   }
   .card-body-self {
     .card-text-self {
