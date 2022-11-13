@@ -1,0 +1,38 @@
+@use "../../variables" as *;
+
+.triangle {
+  position: absolute;
+  z-index: 2;
+  border-bottom: 150px solid transparent;
+  border-left: 150px solid white;
+}
+
+.triangle-text {
+  position: absolute;
+  z-index: 3;
+  font-family: $fontfamily-gothic;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  color: $orange_bistre;
+  margin-left: 6px;
+}
+
+.card-img-change {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.button-change {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 96px;
+  margin-bottom: 32px;
+}
+
+.card-body-change {
+  font-size: 14px;
+  line-height: 33px;
+}
