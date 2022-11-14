@@ -1,5 +1,10 @@
 @use "../../variables" as *;
 
+.card-change {
+  overflow: hidden;
+  height: auto;
+}
+
 .triangle {
   position: absolute;
   z-index: 2;
@@ -21,8 +26,11 @@
 
 .card-img-change {
   position: relative;
-  z-index: 1;
-  width: 100%;
+  display: inline-block;
+  transition: all 0.5s ease;
+  &:hover {
+    transform: scale(1.2, 1.2);
+  }
 }
 
 .button-change {
@@ -33,6 +41,8 @@
 }
 
 .card-body-change {
+  position: relative;
+  background-color: white;
   font-size: 14px;
   line-height: 33px;
 }
