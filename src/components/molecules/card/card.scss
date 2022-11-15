@@ -25,24 +25,31 @@
 }
 
 .card-img-change {
-  position: relative;
-  display: inline-block;
   transition: all 0.5s ease;
   &:hover {
-    transform: scale(1.2, 1.2);
+    @media screen and(min-width:$breakpoint-md) {
+      transform: scale(1.2, 1.2);
+    }
   }
 }
 
 .button-change {
   margin-right: auto;
   margin-left: auto;
-  margin-top: 96px;
-  margin-bottom: 32px;
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
 .card-body-change {
   position: relative;
-  background-color: white;
+  background-color: #f5f5f5;
+  padding: 0;
   font-size: 14px;
   line-height: 33px;
+}
+
+.card-body-field {
+  position: relative;
+  padding: 32px;
+  background-color: #f5f5f5;
 }
