@@ -3,6 +3,7 @@
 .card-change {
   overflow: hidden;
   height: auto;
+  border-radius: 0%;
 }
 
 .triangle {
@@ -34,10 +35,7 @@
 }
 
 .button-change {
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 30px;
-  margin-bottom: 0;
+  margin: 30px auto 0 auto;
 }
 
 .card-body-change {
