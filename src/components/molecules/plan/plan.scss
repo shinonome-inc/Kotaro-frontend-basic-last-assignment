@@ -1,8 +1,10 @@
 @use "../../variables" as *;
 
-.plan1 {
-  div:nth-child(1) {
-    background-color: $orange_zorba;
+ul {
+  list-style-type: none;
+  padding: 0px;
+  li:nth-child(1) {
+    margin: 0px;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
@@ -11,12 +13,11 @@
     font-size: 20px;
     line-height: 29px;
   }
-  div:nth-child(2) {
+  li:nth-child(2) {
     padding: 24px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $gray_desertStorm;
     border: 1px solid $gray_gainsboro;
   }
   p:nth-child(1) {
@@ -24,70 +25,39 @@
     font-size: 40px;
     line-height: 58px;
     text-align: center;
-    color: $orange_bistre;
   }
   p:nth-child(2) {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+    color: $orange_bistre;
   }
-  div:nth-child(n + 3) {
+  li:nth-child(n + 3) {
     padding: 20px 10px;
     background-color: $white;
     border: 1px solid $gray_gainsboro;
     margin: -1px 0px;
-    font-family: $fontfamily-gothic;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     text-align: center;
   }
 }
-
-.plan2 {
-  border: 5px solid $orange_bistre;
-  @media screen and(max-width:$breakpoint-sm) {
-    width: 220px;
+ul:nth-child(odd) {
+  li:nth-child(1) {
+    background-color: $orange_zorba;
   }
-  div:nth-child(1) {
-    background-color: $orange_bistre;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-    color: $white;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 29px;
-  }
-  div:nth-child(2) {
-    padding: 24px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  li:nth-child(2) {
     background-color: $gray_desertStorm;
-    border: 1px solid $gray_gainsboro;
   }
-  p:nth-child(1) {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 58px;
-    text-align: center;
-    color: $orange_bistre;
+}
+
+ul:nth-child(even) {
+  border: 5px solid $orange_bistre;
+  li:nth-child(1) {
+    background-color: $orange_bistre;
   }
-  p:nth-child(2) {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-  }
-  div:nth-child(n + 3) {
-    padding: 20px 10px;
-    background-color: $white;
-    border: 1px solid $gray_gainsboro;
-    margin: -1px 0px;
-    font-family: $fontfamily-gothic;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
+  li:nth-child(2) {
+    background-color: $gray_desertStorm;
   }
 }
