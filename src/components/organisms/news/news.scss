@@ -14,20 +14,20 @@
       border-left: 1px solid $gray_gainsboro;
       border-right: 1px solid $gray_gainsboro;
       cursor: pointer;
-      div:nth-child(1) {
+      time {
         padding: 0px 0px 10px;
         font-weight: 400;
         font-size: 12px;
         line-height: 12px;
         color: $gray_nobel;
       }
-      div:nth-child(2) {
+      article {
         line-height: 23px;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
       }
-      div:hover:nth-child(2) {
+      article:hover {
         color: $orange_bistre;
       }
     }
