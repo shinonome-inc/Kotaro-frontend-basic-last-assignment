@@ -87,4 +87,9 @@ ul:nth-child(even) {
   li:nth-child(2) {
     background-color: $gray_desertStorm;
   }
+  li:last-child {
+    height: 80px;
+    justify-content: center;
+    line-height: 40px;
+  }
 }
