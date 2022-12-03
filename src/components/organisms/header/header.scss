@@ -32,7 +32,18 @@ div.container-change {
     }
     div {
       div {
+        background-color: $black;
+        margin: 0px;
+        border: 0px;
+        padding: 0px;
         a {
+          color: $white;
+          padding: 18px 90px 18px 18px;
+          font-size: 14px;
+          line-height: 20px;
+          &:hover {
+            background-color: $orange_bistre;
+          }
         }
       }
     }
