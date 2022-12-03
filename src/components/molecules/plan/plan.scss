@@ -94,7 +94,7 @@
       }
     }
   }
-  @media screen and(max-width:$breakpoint-md) {
+  @media screen and(min-width:$breakpoint-md) {
     display: flex;
   }
 }
