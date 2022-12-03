@@ -1,0 +1,40 @@
+@use "../../variables" as *;
+
+div.container-change {
+  background-color: $black_50;
+  display: flex;
+  width: 1200px;
+  height: 90px;
+  @media screen and(max-width:$breakpoint-lg) {
+  }
+  a.switch {
+    margin: auto 237px auto 30px;
+    width: 140px;
+    height: 23.99px;
+    img {
+      width: 140px;
+    }
+  }
+  div.btn-group-change {
+    button {
+      background-color: transparent;
+      border: 0px;
+      margin: 35px 20px !important;
+      padding: 0px;
+      font-size: 14px;
+      font-weight: 400px;
+      &:hover {
+        color: $gray_nobel;
+      }
+      &:last-child {
+        margin-right: 50px;
+      }
+    }
+    div {
+      div {
+        a {
+        }
+      }
+    }
+  }
+}
