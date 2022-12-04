@@ -16,8 +16,6 @@ div.container-change {
     }
     div.btn-group-change {
       display: none;
-      width: 0px;
-      height: 0px;
     }
     div.rectangle-group {
       display: flex;
@@ -27,11 +25,16 @@ div.container-change {
       gap: 3px;
       height: 19px;
       margin: auto 16px auto 825px;
+      cursor: pointer;
       .rectangle {
         width: 15px;
         height: 3px;
         background-color: $white;
         border-radius: 1px;
+      }
+      ul {
+        list-style: none;
+        background-color: $black;
       }
     }
   }
@@ -77,6 +80,7 @@ div.container-change {
             padding: 18px 90px 18px 18px;
             font-size: 14px;
             line-height: 20px;
+            transition: all 0.2s ease;
             &:hover {
               background-color: $orange_bistre;
             }
