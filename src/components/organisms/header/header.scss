@@ -1,55 +1,92 @@
 @use "../../variables" as *;
 
 div.container-change {
-  background-color: $black_50;
   display: flex;
-  width: 1200px;
-  height: 90px;
   @media screen and(max-width:$breakpoint-lg) {
+    background-color: $black;
+    width: 992px;
+    height: 60px;
+    a.switch {
+      margin: auto 0px auto 16px;
+      width: 120px;
+      height: 20.56px;
+      img {
+        width: 120px;
+      }
+    }
+    div.btn-group-change {
+      display: none;
+      width: 0px;
+      height: 0px;
+    }
+    div.rectangle-group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 2px 0px;
+      gap: 3px;
+      height: 19px;
+      margin: auto 16px auto 825px;
+      .rectangle {
+        width: 15px;
+        height: 3px;
+        background-color: $white;
+        border-radius: 1px;
+      }
+    }
   }
-  a.switch {
-    margin: auto 237px auto 30px;
-    width: 140px;
-    height: 23.99px;
-    img {
+  @media screen and(min-width:$breakpoint-lg) {
+    background-color: $black_50;
+    width: 1200px;
+    height: 90px;
+    a.switch {
+      margin: auto 237px auto 30px;
       width: 140px;
-    }
-  }
-  div.btn-group-change {
-    button {
-      background-color: transparent;
-      border: 0px;
-      margin: 35px 20px !important;
-      padding: 0px;
-      font-size: 14px;
-      font-weight: 400px;
-      &:hover {
-        color: $gray_nobel;
-      }
-      &:last-child {
-        margin-right: 50px;
+      height: 23.99px;
+      img {
+        width: 140px;
       }
     }
-    div {
-      div {
-        background-color: $black;
-        margin: 0px;
+    div.btn-group-change {
+      button {
+        background-color: transparent;
         border: 0px;
+        margin: 35px 20px !important;
         padding: 0px;
-        border-radius: 0%;
-        width: 220px;
-        height: 560px;
-        transform: translate3d(0px, 90px, 0px) !important;
-        a {
-          color: $white;
-          padding: 18px 90px 18px 18px;
-          font-size: 14px;
-          line-height: 20px;
-          &:hover {
-            background-color: $orange_bistre;
+        font-size: 14px;
+        font-weight: 400px;
+        &:hover {
+          color: $gray_nobel;
+        }
+        &:last-child {
+          margin-right: 50px;
+        }
+      }
+      div {
+        div {
+          background-color: $black;
+          margin: 0px;
+          border: 0px;
+          padding: 0px;
+          border-radius: 0%;
+          width: 220px;
+          height: 560px;
+          transform: translate3d(0px, 90px, 0px) !important;
+          a {
+            color: $white;
+            padding: 18px 90px 18px 18px;
+            font-size: 14px;
+            line-height: 20px;
+            &:hover {
+              background-color: $orange_bistre;
+            }
           }
         }
       }
+    }
+    div.rectangle-group {
+      display: none;
+      width: 0px;
     }
   }
 }
