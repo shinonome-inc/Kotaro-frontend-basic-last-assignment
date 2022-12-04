@@ -36,6 +36,10 @@ div.container-change {
         margin: 0px;
         border: 0px;
         padding: 0px;
+        border-radius: 0%;
+        width: 220px;
+        height: 560px;
+        transform: translate3d(0px, 90px, 0px) !important;
         a {
           color: $white;
           padding: 18px 90px 18px 18px;
