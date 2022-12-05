@@ -6,6 +6,7 @@ div.container-change {
     background-color: $black;
     width: 992px;
     height: 60px;
+    margin-bottom: 10px;
     a.switch {
       margin: auto 0px auto 16px;
       width: 120px;
@@ -32,9 +33,37 @@ div.container-change {
         background-color: $white;
         border-radius: 1px;
       }
-      ul {
+      &:active ul.rectangle-dropdown-menu {
+        display: block;
+      }
+      ul.rectangle-dropdown-menu {
+        display: none;
         list-style: none;
         background-color: $black;
+        position: absolute;
+        top: 76px;
+        left: 16px;
+        z-index: 1000;
+        float: left;
+        min-width: 10rem;
+        font-size: 1rem;
+        text-align: left;
+        background-clip: padding-box;
+        box-sizing: border-box;
+        width: 992px;
+        padding: 0px 0px 0px 16px;
+        li {
+          width: fit-content;
+          margin: 15px 0px;
+          a {
+            font-size: 14px;
+            color: $white;
+            text-decoration: none;
+          }
+          ul {
+            padding: 0px 0px 0px 12px;
+          }
+        }
       }
     }
   }
