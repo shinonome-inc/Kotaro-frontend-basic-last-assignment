@@ -42,10 +42,10 @@
         p:nth-child(2) {
           font-size: 40px;
           line-height: 58px;
-          margin: 0px 0px 12px 0px;
+          margin: 0px;
         }
       }
-      & + p {
+      & > p {
         font-weight: 400;
         font-size: 14px;
         line-height: 20px;
@@ -56,11 +56,11 @@
         margin: 0px;
       }
     }
-
     li:nth-child(n + 3) {
       padding: 20px 10px;
       background-color: $white;
       border: 1px solid $gray_gainsboro;
+
       font-weight: 400;
       font-size: 14px;
       line-height: 20px;
@@ -79,6 +79,9 @@
     }
     li:nth-child(2) {
       background-color: $gray_desertStorm;
+    }
+    li:nth-child(n + 3) {
+      border-top: 0px;
     }
   }
   ul:nth-child(even) {
