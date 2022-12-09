@@ -7,6 +7,9 @@
       display: flex;
       width: 992px;
       height: 700px;
+      // @media screen and(max-width:$breakpoint-md) {
+      //   height: 360px;
+      // }
     }
     .literal {
       position: absolute;
