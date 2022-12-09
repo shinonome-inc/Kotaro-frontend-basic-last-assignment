@@ -1,0 +1,39 @@
+@use "../../variables" as *;
+
+.top {
+  .img-group {
+    img {
+      display: flex;
+      width: 992px;
+      height: 700px;
+    }
+    p {
+      position: absolute;
+      font-family: $fontfamily-mincho;
+      font-size: 36px;
+      line-height: 52px;
+      display: flex;
+      align-items: center;
+      color: $white;
+    }
+  }
+  .message {
+    width: 992px;
+    height: 316px;
+    background-color: $black;
+    padding: 52px 63px 74px 36px;
+    h2 {
+      color: $white;
+      font-size: 36px;
+      line-height: 54px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    p {
+      line-height: 36px;
+      color: $white;
+    }
+  }
+}
