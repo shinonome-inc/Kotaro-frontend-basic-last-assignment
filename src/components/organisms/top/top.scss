@@ -2,19 +2,27 @@
 
 .top {
   .img-group {
+    position: relative;
     img {
       display: flex;
       width: 992px;
       height: 700px;
     }
-    p {
+    .literal {
       position: absolute;
-      font-family: $fontfamily-mincho;
-      font-size: 36px;
-      line-height: 52px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       display: flex;
-      align-items: center;
-      color: $white;
+      p {
+        font-family: $fontfamily-mincho;
+        font-size: 36px;
+        line-height: 52px;
+        display: flex;
+        align-items: center;
+        color: $white;
+        writing-mode: vertical-rl;
+      }
     }
   }
   .message {
