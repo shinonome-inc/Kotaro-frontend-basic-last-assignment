@@ -2,9 +2,10 @@
 
 .message {
   text-align: center;
-  padding: 52px auto 20px;
+  padding: 52px auto 20px auto;
   @media screen and (max-width: $breakpoint-lg) {
-    padding: 32px auto 20px;
+    padding-top: 32px;
+    padding-bottom: 20px;
   }
 
   .text-title {
