@@ -4,6 +4,7 @@
   padding: 0px;
   .img-group {
     position: relative;
+    width: 992px;
     img {
       display: flex;
       width: 992px;
@@ -37,10 +38,13 @@
     p {
       color: $white;
     }
-    @media screen and(max-width:$breakpoint-lg) {
+  }
+  @media screen and(max-width:$breakpoint-lg) {
+    .img-group {
+    }
+    .message {
       width: 992px;
       height: 211px;
-      padding: 32px auto 32px;
       margin: 0px;
       h2 {
         font-size: 20px;
@@ -51,7 +55,9 @@
         line-height: 28px;
       }
     }
-    @media screen and(min-width:$breakpoint-lg) {
+  }
+  @media screen and(min-width:$breakpoint-lg) {
+    .message {
       width: 992px;
       height: 316px;
       padding: 52px 63px 74px 36px;
