@@ -1,0 +1,23 @@
+@use "../../variables" as *;
+
+.card-group {
+  display: flex;
+  @media screen and(max-width:$breakpoint-md) {
+    padding: 0px 113px;
+    flex-flow: column;
+    div.card-change {
+      margin-bottom: 40px;
+    }
+  }
+  @media screen and(min-width:$breakpoint-md) {
+    padding: 0px 24px 100px 24px;
+    gap: 24px;
+    div:nth-child(3) {
+      .card-field {
+        a {
+          margin-top: 60px;
+        }
+      }
+    }
+  }
+}
