@@ -12,11 +12,30 @@
   @media screen and(min-width:$breakpoint-md) {
     padding: 0px 24px 100px 24px;
     gap: 24px;
-    div:nth-child(3) {
-      .card-field {
-        a {
-          margin-top: 60px;
-        }
+    div.card-body-change {
+      height: 264px;
+      p {
+        margin-bottom: 0px;
+      }
+    }
+  }
+  @media screen and(min-width:$breakpoint-lg) {
+    padding: 0px 24px 100px 24px;
+    gap: 24px;
+    div.card-body-change {
+      height: 198px;
+      p {
+        margin-bottom: 0px;
+      }
+    }
+  }
+  @media screen and(min-width:$breakpoint-xl) {
+    padding: 0px 24px 100px 24px;
+    gap: 24px;
+    div.card-body-change {
+      height: 132px;
+      p {
+        margin-bottom: 0px;
       }
     }
   }
