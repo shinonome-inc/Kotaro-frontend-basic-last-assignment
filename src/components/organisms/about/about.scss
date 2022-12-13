@@ -6,7 +6,8 @@
     width: 991px;
     .img-group {
       img {
-        width: 360px;
+        margin: 32.5px 32.5px 30px 32.5px;
+        transform: scale(calc(360 / 295));
       }
     }
     .message {
