@@ -5,9 +5,14 @@
     padding: 0px 136px 40px 136px;
     width: 991px;
     .img-group {
-      img {
-        margin: 32.5px 32.5px 30px 32.5px;
-        transform: scale(calc(360 / 295));
+      display: flex;
+      flex-direction: column;
+      .img-grp {
+        display: flex;
+        img {
+          margin: 32.5px 32.5px 30px 32.5px;
+          transform: scale(calc(360 / 295));
+        }
       }
     }
     .message {
@@ -24,8 +29,12 @@
     padding: 0px 16px 100px 16px;
     width: 992px;
     .img-group {
-      img {
-        width: 240px;
+      display: flex;
+      .img-grp {
+        display: flex;
+        img {
+          width: 240px;
+        }
       }
     }
     .message {
@@ -42,9 +51,6 @@
     }
   }
 
-  .img-group {
-    display: flex;
-  }
   .message {
     background-color: $white_smoke;
     h2 {
