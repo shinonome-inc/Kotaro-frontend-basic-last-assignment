@@ -89,13 +89,14 @@ ul:nth-child(even) {
     margin: -1px -1px 0px -1px;
     &:nth-child(1) {
       background-color: $orange_bistre;
-      margin-top: -3px;
+      margin: -5px -5px 0px -5px;
     }
     &:nth-child(2) {
       background-color: $gray_desertStorm;
     }
     &:nth-child(n + 3) {
-      padding-bottom: 21px;
+      padding-top: 19px;
+      padding-bottom: 20px;
     }
   }
 }
