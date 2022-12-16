@@ -3,6 +3,9 @@
 .top {
   .img-group {
     position: relative;
+    background-image: url(../../../img/top.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     .literal {
       position: absolute;
       top: 50%;
@@ -30,9 +33,6 @@
   }
   @media screen and(max-width:$breakpoint-lg) {
     .img-group {
-      background-image: url(../../../img/top.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
       background-position: -20px;
       height: 360px;
       .literal {
@@ -55,11 +55,12 @@
     }
   }
   @media screen and(min-width:$breakpoint-lg) {
+    position: relative;
     .img-group {
-      background-image: url(../../../img/top.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 100vh;
+      width: 100%;
+      min-height: 0;
+      padding-top: 75%;
+
       .literal {
         p {
           font-size: 36px;
@@ -68,6 +69,7 @@
       }
     }
     .message {
+      position: absolute;
       height: 316px;
       padding: 52px 63px 74px 36px;
       h2 {
