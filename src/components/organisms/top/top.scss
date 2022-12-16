@@ -3,12 +3,6 @@
 .top {
   .img-group {
     position: relative;
-    width: 992px;
-    img {
-      display: flex;
-      width: 992px;
-      height: 700px;
-    }
     .literal {
       position: absolute;
       top: 50%;
@@ -26,6 +20,7 @@
   }
   .message {
     background-color: $black;
+    width: 100%;
     h2 {
       color: $white;
     }
@@ -34,13 +29,12 @@
     }
   }
   @media screen and(max-width:$breakpoint-lg) {
-    position: relative;
     .img-group {
-      img {
-        width: 992px;
-        height: 360px;
-        object-fit: cover;
-      }
+      background-image: url(../../../img/top.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: -20px;
+      height: 360px;
       .literal {
         p {
           font-size: 20px;
@@ -49,9 +43,7 @@
       }
     }
     .message {
-      width: 992px;
       height: 211px;
-      padding: 32px 161px 20px 161px;
       h2 {
         font-size: 20px;
         line-height: 29px;
@@ -64,6 +56,10 @@
   }
   @media screen and(min-width:$breakpoint-lg) {
     .img-group {
+      background-image: url(../../../img/top.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
       .literal {
         p {
           font-size: 36px;
@@ -72,7 +68,6 @@
       }
     }
     .message {
-      width: 992px;
       height: 316px;
       padding: 52px 63px 74px 36px;
       h2 {
