@@ -19,7 +19,6 @@ ul.plan {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid $gray_gainsboro;
     div {
       display: flex;
       flex-direction: row;
@@ -77,6 +76,7 @@ ul:nth-child(odd) {
     background-color: $orange_zorba;
   }
   li:nth-child(2) {
+    border: 1px solid $gray_gainsboro;
     background-color: $gray_desertStorm;
   }
   li:nth-child(n + 3) {
