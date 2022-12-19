@@ -95,8 +95,12 @@ ul:nth-child(even) {
       background-color: $gray_desertStorm;
     }
     &:nth-child(n + 3) {
-      padding-top: 19px;
-      padding-bottom: 20px;
+      padding-top: 20px;
+      padding-bottom: 21px;
+    }
+    &:last-child {
+      padding-top: 16px;
+      padding-bottom: 17px;
     }
   }
 }
