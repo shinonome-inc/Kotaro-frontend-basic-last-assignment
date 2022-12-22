@@ -15,7 +15,7 @@
     position: absolute;
     z-index: 2;
     font-weight: 700;
-    font-size: 20px;
+    font-size: $fontsize-l;
     display: flex;
     align-items: center;
     color: $orange_bistre;
@@ -26,17 +26,17 @@
     cursor: pointer;
     &:hover {
       @media screen and(min-width:$breakpoint-md) {
-        transform: scale(1.2, 1.2);
+        transform: scale(1.2);
       }
     }
   }
   .card-body-field {
     position: relative;
     padding: 32px;
-    background-color: #f5f5f5;
+    background-color: $white_smoke;
     .card-body-change {
       padding: 0;
-      font-size: 14px;
+      font-size: $fontsize-s;
       line-height: 33px;
     }
     .button-change {
