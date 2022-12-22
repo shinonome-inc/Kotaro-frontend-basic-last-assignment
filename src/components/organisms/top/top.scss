@@ -31,29 +31,7 @@
       color: $white;
     }
   }
-  @media screen and(max-width:$breakpoint-lg) {
-    .img-group {
-      background-position: -20px;
-      height: 360px;
-      .literal {
-        p {
-          font-size: 20px;
-          line-height: 29px;
-        }
-      }
-    }
-    .message {
-      height: 211px;
-      h2 {
-        font-size: 20px;
-        line-height: 29px;
-        margin-bottom: 6px;
-      }
-      p {
-        line-height: 28px;
-      }
-    }
-  }
+
   @media screen and(min-width:$breakpoint-lg) {
     position: relative;
     .img-group {
@@ -79,6 +57,60 @@
       }
       p {
         line-height: 36px;
+      }
+    }
+  }
+  @media screen and(max-width:$breakpoint-lg) {
+    .img-group {
+      background-position: 0px 0px;
+      height: 360px;
+      .literal {
+        p {
+          font-size: 20px;
+          line-height: 29px;
+        }
+      }
+    }
+    .message {
+      height: 211px;
+      text-align: center;
+      h2 {
+        font-size: 20px;
+        line-height: 29px;
+        margin-bottom: 6px;
+      }
+      p {
+        margin-left: auto;
+        margin-right: auto;
+        width: 670px;
+        line-height: 28px;
+      }
+    }
+  }
+  @media screen and(max-width:$breakpoint-md) {
+    .img-group {
+      background-position: 0px 0px;
+      height: 360px;
+      .literal {
+        p {
+          font-size: 20px;
+          line-height: 29px;
+        }
+      }
+    }
+    .message {
+      height: 211px;
+      text-align: center;
+      h2 {
+        font-size: 20px;
+        line-height: 29px;
+        margin-bottom: 6px;
+      }
+      p {
+        margin-left: auto;
+        margin-right: auto;
+        width: 500px;
+        line-height: 28px;
       }
     }
   }
