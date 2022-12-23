@@ -47,16 +47,9 @@
       }
     }
     .message {
-      position: absolute;
-      height: 316px;
       padding: 52px 63px 74px 36px;
       h2 {
-        font-size: 36px;
         line-height: 52px;
-        margin-bottom: 10px;
-      }
-      p {
-        line-height: 36px;
       }
     }
   }
@@ -73,17 +66,13 @@
     }
     .message {
       height: 211px;
-      text-align: center;
       h2 {
-        font-size: 20px;
         line-height: 29px;
-        margin-bottom: 6px;
       }
       p {
         margin-left: auto;
         margin-right: auto;
         width: 670px;
-        line-height: 28px;
       }
     }
   }
@@ -99,18 +88,10 @@
       }
     }
     .message {
-      height: 211px;
-      text-align: center;
-      h2 {
-        font-size: 20px;
-        line-height: 29px;
-        margin-bottom: 6px;
-      }
       p {
         margin-left: auto;
         margin-right: auto;
         width: 500px;
-        line-height: 28px;
       }
     }
   }
