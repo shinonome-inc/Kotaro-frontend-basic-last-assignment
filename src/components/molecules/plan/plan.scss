@@ -71,7 +71,7 @@ ul.plan {
     width: 100%;
   }
 }
-ul:nth-child(odd) {
+ul.plan:nth-child(odd) {
   li:nth-child(1) {
     background-color: $orange_zorba;
   }
@@ -83,7 +83,7 @@ ul:nth-child(odd) {
     border-top: 0px;
   }
 }
-ul:nth-child(even) {
+ul.plan:nth-child(even) {
   border: 5px solid $orange_bistre;
   li {
     margin: -1px -1px 0px -1px;
