@@ -55,7 +55,7 @@
   }
   @media screen and(max-width:$breakpoint-lg) {
     .img-group {
-      background-position: 0px 0px;
+      background-position: 0px -85px;
       height: 360px;
       .literal {
         p {
@@ -78,7 +78,7 @@
   }
   @media screen and(max-width:$breakpoint-md) {
     .img-group {
-      background-position: 0px -85px;
+      background-position: 0px -53px;
       height: 360px;
       .literal {
         p {
@@ -88,6 +88,7 @@
       }
     }
     .message {
+      padding-bottom: 32px;
       p {
         margin-left: auto;
         margin-right: auto;
