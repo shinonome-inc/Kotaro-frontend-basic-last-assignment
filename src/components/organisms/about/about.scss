@@ -1,31 +1,21 @@
 @use "../../variables" as *;
 
 .about {
-  @media screen and(max-width:$breakpoint-lg) {
-    padding: 0px 136px 40px 136px;
-    width: 991px;
+  @media screen and(min-width:$breakpoint-lg) {
+    max-width: 990px;
     .img-group {
       display: flex;
-      flex-direction: column;
-      .img-grp {
-        display: flex;
-        img {
-          margin: 32.5px 32.5px 30px 32.5px;
-          transform: scale(calc(360 / 295));
-        }
+      img {
+        width: 240px;
       }
     }
   }
-  @media screen and(min-width:$breakpoint-lg) {
-    padding: 0px 16px 100px 16px;
-    width: 992px;
+  @media screen and(max-width:$breakpoint-lg) {
     .img-group {
-      display: flex;
-      .img-grp {
-        display: flex;
-        img {
-          width: 240px;
-        }
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      img {
+        width: 100%;
       }
     }
   }
