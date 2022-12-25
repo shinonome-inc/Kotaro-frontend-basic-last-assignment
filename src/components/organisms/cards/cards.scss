@@ -2,41 +2,23 @@
 
 .card-group {
   display: flex;
-  .card-change {
-    .card-body-field {
-      flex: 1;
-    }
-  }
+  gap: 24px;
+  padding-bottom: 100px;
+
   @media screen and(max-width:$breakpoint-md) {
     flex-flow: column;
+    gap: 0px;
     div.card-change {
       margin-bottom: 40px;
     }
   }
-  @media screen and(min-width:$breakpoint-md) {
-    gap: 24px;
-    div.card-body-change {
-      height: 330px;
-      p {
-        margin-bottom: 0px;
-      }
-    }
-  }
-  @media screen and(min-width:$breakpoint-lg) {
-    gap: 24px;
-    div.card-body-change {
-      height: 198px;
-      p {
-        margin-bottom: 0px;
-      }
-    }
-  }
-  @media screen and(min-width:$breakpoint-xl) {
-    gap: 24px;
-    div.card-body-change {
-      height: 165px;
-      p {
-        margin-bottom: 0px;
+  .card-change {
+    .card-body-field {
+      flex: 1;
+      div.card-body-change {
+        p {
+          margin-bottom: 0px;
+        }
       }
     }
   }
