@@ -1,4 +1,5 @@
 @use "../../variables" as *;
+@use "../../molecules/message/message.scss" as *;
 
 .top {
   .img-group {
@@ -68,12 +69,12 @@
   }
   @media screen and(max-width:$breakpoint-md) {
     .img-group {
-      background-position: 0px -53px;
+      background-position: 0px 0px;
     }
     .message {
       padding-bottom: 32px;
       p {
-        width: 500px;
+        width: 100%;
       }
     }
   }
