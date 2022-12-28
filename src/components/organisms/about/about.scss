@@ -1,5 +1,5 @@
 @use "../../variables" as *;
-
+@use "../../molecules/message/message.scss" as *;
 .about {
   @media screen and(min-width:$breakpoint-lg) {
     max-width: 990px;
