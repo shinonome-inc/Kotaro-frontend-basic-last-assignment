@@ -1,5 +1,6 @@
 @use "../../variables" as *;
 .footer {
+  margin-bottom: 0px;
   .contact {
     background-color: $white;
     background-image: url(../../../img/footer.png);
@@ -32,7 +33,12 @@
       gap: 8px;
       p {
         margin-bottom: 0px;
+        width: fit-content;
+        &:hover {
+          color: $orange_bistre;
+        }
       }
+
       .bar {
         display: none;
       }
