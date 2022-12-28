@@ -2,6 +2,7 @@
 @use "../../molecules/message/message.scss" as *;
 
 .top {
+  margin-bottom: 30px;
   .img-group {
     position: relative;
     background-image: url(../../../img/top.jpg);
@@ -46,6 +47,7 @@
     }
   }
   @media screen and(max-width:$breakpoint-lg) {
+    margin-bottom: 40px;
     .img-group {
       background-position: 0px -85px;
       height: 360px;
