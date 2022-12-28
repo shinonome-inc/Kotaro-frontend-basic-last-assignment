@@ -11,4 +11,16 @@ section.plans {
   .button {
     margin: 24px auto;
   }
+  @media screen and(min-width:$breakpoint-md) {
+    margin-bottom: 100px;
+    .message {
+      padding: 56px 0px 32px;
+    }
+    .plan-group {
+      display: flex;
+      .plan {
+        margin: 0px 15px;
+      }
+    }
+  }
 }
