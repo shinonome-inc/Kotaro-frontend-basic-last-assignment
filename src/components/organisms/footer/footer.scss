@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
     background-size: 150px 25.7px;
     background-position: top 32px center;
-    padding: 77.7px 0px 66px;
+    padding: 77.7px 0px 32px;
     margin: 0px auto;
     .address {
       p {
@@ -19,6 +19,7 @@
     }
     .icon-list {
       text-align: center;
+      margin-top: 20px;
       &:hover {
         color: $gray_nobel;
       }
@@ -35,6 +36,9 @@
       p {
         margin-bottom: 0px;
       }
+      .bar {
+        display: none;
+      }
     }
   }
   .copyright {
@@ -49,10 +53,19 @@
   }
   @media screen and(min-width:$breakpoint-md) {
     .contact {
-      width: 767px;
-      height: 199.7px;
-      p {
-        padding: 77.7px 134px 32px;
+      padding: 97.7px 0px 52px;
+    }
+    .content-list {
+      display: flex;
+      justify-content: center;
+      .side {
+        display: flex;
+        .bar {
+          display: block;
+        }
+      }
+      .side:last-child {
+        margin-left: 8px;
       }
     }
   }
