@@ -2,21 +2,26 @@
 .footer {
   .contact {
     background-color: $white;
+    width: fit-content;
+    background-image: url(../../../img/footer.png);
+    background-repeat: no-repeat;
+    background-size: 150px 25.7px;
+    background-position: top 32px center;
+    padding: 77.7px 0px 66px;
+    margin: 0px auto;
     .address {
-      width: fit-content;
-      background-image: url(../../../img/footer.png);
-      background-repeat: no-repeat;
-      background-size: 150px 25.7px;
-      background-position: top 32px center;
       p {
         font-size: 14px;
         line-height: 28px;
-        padding: 77.7px 66px;
         margin: 0px;
-        white-space: nowrap;
+        text-align: center;
       }
     }
     .icon-list {
+      text-align: center;
+      &:hover {
+        color: $gray_nobel;
+      }
     }
   }
   .content-list {
