@@ -1,0 +1,14 @@
+@use "../../variables" as *;
+
+section.plans {
+  margin-bottom: 35px;
+  .message {
+    padding: 56px 0px;
+    h2 {
+      color: $orange_bistre;
+    }
+  }
+  .button {
+    margin: 24px auto;
+  }
+}
