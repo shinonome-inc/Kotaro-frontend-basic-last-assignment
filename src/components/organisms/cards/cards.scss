@@ -1,0 +1,25 @@
+@use "../../variables" as *;
+
+.card-group {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 100px;
+
+  @media screen and(max-width:$breakpoint-md) {
+    flex-flow: column;
+    gap: 0px;
+    div.card-change {
+      margin-bottom: 40px;
+    }
+  }
+  .card-change {
+    .card-body-field {
+      flex: 1;
+      div.card-body-change {
+        p {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}
