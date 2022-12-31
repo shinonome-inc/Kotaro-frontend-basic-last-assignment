@@ -21,7 +21,6 @@
     }
   }
   .message {
-    padding: 52px 0px 74px;
     background-color: $black;
     h2 {
       color: $white;
@@ -42,6 +41,7 @@
       }
     }
     .message {
+      padding: 52px 0px 74px;
       h2 {
         line-height: 52px;
       }
