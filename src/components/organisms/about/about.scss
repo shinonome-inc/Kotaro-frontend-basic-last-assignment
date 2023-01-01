@@ -2,11 +2,11 @@
 @use "../../molecules/message/message.scss" as *;
 .about {
   @media screen and(min-width:$breakpoint-lg) {
-    max-width: 990px;
     .img-group {
       display: flex;
       img {
-        width: 240px;
+        flex: 1;
+        min-width: 0;
       }
     }
   }
