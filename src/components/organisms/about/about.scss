@@ -1,0 +1,29 @@
+@use "../../variables" as *;
+@use "../../molecules/message/message.scss" as *;
+.about {
+  @media screen and(min-width:$breakpoint-lg) {
+    .img-group {
+      display: flex;
+      img {
+        flex: 1;
+        min-width: 0;
+      }
+    }
+  }
+  @media screen and(max-width:$breakpoint-lg) {
+    .img-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .message {
+    background-color: $white_smoke;
+    h2 {
+      color: $orange_bistre;
+    }
+  }
+}
