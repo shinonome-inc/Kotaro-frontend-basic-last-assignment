@@ -32,6 +32,8 @@
     grid-template-columns: repeat((2, 1fr));
     background-color: $white_smoke;
     padding: 16px;
+    border-top: 1px solid $gray_nobel;
+    border-bottom: 1px solid $gray_nobel;
     .side {
       display: grid;
       gap: 8px;
