@@ -1,0 +1,20 @@
+@use "../../variables" as *;
+
+.newsAndEvents {
+  .news {
+    margin-top: 60px;
+  }
+  @media screen and(min-width:$breakpoint-lg) {
+    display: flex;
+    .events {
+      margin: 60px 0px 120px 40px;
+      .event-list {
+        .event-card {
+          a {
+            height: 141px;
+          }
+        }
+      }
+    }
+  }
+}
