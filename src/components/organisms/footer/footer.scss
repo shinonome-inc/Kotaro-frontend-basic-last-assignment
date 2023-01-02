@@ -65,7 +65,7 @@
       justify-content: center;
       .side {
         display: flex;
-        p {
+        a {
           &::after {
             content: "|";
             margin-left: 8px;
