@@ -44,10 +44,6 @@
           color: $orange_bistre;
         }
       }
-
-      .bar {
-        display: none;
-      }
     }
   }
   .copyright {
@@ -69,8 +65,11 @@
       justify-content: center;
       .side {
         display: flex;
-        .bar {
-          display: block;
+        p {
+          &::after {
+            content: "|";
+            margin-left: 8px;
+          }
         }
       }
       .side:last-child {
