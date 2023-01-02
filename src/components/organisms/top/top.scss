@@ -33,6 +33,7 @@
   @media screen and(min-width:$breakpoint-lg) {
     .img-group {
       padding-top: 75%;
+      height: 100vh;
       .literal {
         p {
           font-size: 36px;
