@@ -1,0 +1,86 @@
+@use "../../variables" as *;
+@use "../../molecules/message/message.scss" as *;
+
+.top {
+  margin-bottom: 30px;
+  .img-group {
+    position: relative;
+    background-image: url(../../../img/top.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .literal {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      p {
+        font-family: $fontfamily-mincho;
+        color: $white;
+        writing-mode: vertical-rl;
+      }
+    }
+  }
+  .message {
+    background-color: $black;
+    h2 {
+      color: $white;
+    }
+    p {
+      color: $white;
+    }
+  }
+
+  @media screen and(min-width:$breakpoint-lg) {
+    .img-group {
+      padding-top: 75%;
+      height: 100vh;
+      .literal {
+        p {
+          font-size: 36px;
+          line-height: 52px;
+        }
+      }
+    }
+    .message {
+      padding: 52px 0px 74px;
+      h2 {
+        line-height: 52px;
+        padding: 0px 36px;
+      }
+    }
+  }
+  @media screen and(max-width:$breakpoint-lg) {
+    margin-bottom: 40px;
+    .img-group {
+      background-position: 0px -85px;
+      height: 360px;
+      .literal {
+        p {
+          font-size: 20px;
+          line-height: 29px;
+        }
+      }
+    }
+    .message {
+      h2 {
+        line-height: 29px;
+      }
+      p {
+        margin-left: auto;
+        margin-right: auto;
+        width: 670px;
+      }
+    }
+  }
+  @media screen and(max-width:$breakpoint-md) {
+    .img-group {
+      background-position: 0px 0px;
+    }
+    .message {
+      padding-bottom: 32px;
+      p {
+        width: 100%;
+      }
+    }
+  }
+}
