@@ -3,7 +3,7 @@
 section.plans {
   margin-bottom: 35px;
   .message {
-    padding: 56px 0px;
+    padding: 0px 0px 56px;
     h2 {
       color: $orange_bistre;
     }
@@ -14,7 +14,7 @@ section.plans {
   @media screen and(min-width:$breakpoint-md) {
     margin-bottom: 100px;
     .message {
-      padding: 56px 0px 32px;
+      padding: 0px 0px 32px;
     }
     .plan-group {
       display: flex;
