@@ -3,7 +3,7 @@
 header.container-change {
   display: flex;
   background-color: $black;
-  width: 992px;
+  width: 100%;
   height: 60px;
   margin-bottom: 10px;
   a.switch {
@@ -18,6 +18,8 @@ header.container-change {
     display: none;
   }
   div.rectangle-group {
+    padding-right: 16px;
+    padding-left: calc(100% - 167px);
     #check {
       display: none;
     }
@@ -27,7 +29,6 @@ header.container-change {
       padding: 22.5px 0px;
       gap: 3px;
       height: 60px;
-      margin: auto 16px auto 825px;
       cursor: pointer;
       .rectangle {
         width: 15px;
@@ -53,7 +54,7 @@ header.container-change {
       text-align: left;
       background-clip: padding-box;
       box-sizing: border-box;
-      width: 992px;
+      width: calc(100% - 32px);
       padding: 0px 0px 0px 16px;
       li {
         width: fit-content;
@@ -82,19 +83,23 @@ header.container-change {
       }
     }
     div.btn-group-change {
-      display: block;
+      display: flex;
       button {
         background-color: transparent;
         border: 0px;
         margin: 35px 20px !important;
         padding: 0px;
         font-size: 14px;
-        font-weight: 400px;
+        font-weight: 400;
+        color: $white;
         &:hover {
           color: $gray_nobel;
         }
+        &:focus {
+          box-shadow: none;
+        }
         &:last-child {
-          margin-right: 50px;
+          display: none;
         }
       }
       div {
