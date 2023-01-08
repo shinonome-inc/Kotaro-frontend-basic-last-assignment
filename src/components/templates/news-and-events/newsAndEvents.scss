@@ -17,12 +17,17 @@
         }
       }
     }
+    .event-list {
+      margin-bottom: 0px;
+    }
+    .news-and-events-more {
+      margin-top: 30px;
+    }
   }
   @media screen and(min-width:$breakpoint-lg) {
     display: flex;
     flex-direction: row;
     gap: 40px;
-    margin-bottom: 56px;
     .news {
       min-width: 0px;
       flex: 1;
@@ -31,7 +36,7 @@
     .events {
       min-width: 0px;
       flex: 1;
-      margin: 60px 0px 0px;
+      margin: 0px;
       .event-list {
         .event-card {
           a {
