@@ -1,10 +1,15 @@
 @use "../../variables" as *;
 
 .newsAndEvents {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  padding: 56px 0px;
   .news {
-    margin-top: 60px;
+    margin-bottom: 0px;
   }
   .events {
+    margin-bottom: 0px;
     .event-card {
       .event-caption {
         h3 {
