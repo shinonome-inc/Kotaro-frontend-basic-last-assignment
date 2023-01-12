@@ -23,7 +23,7 @@ header.container-change {
     #check {
       display: none;
     }
-    label {
+    label.rectangle-check {
       display: flex;
       flex-direction: column;
       padding: 22.5px 0px;
@@ -37,7 +37,7 @@ header.container-change {
         border-radius: 1px;
       }
     }
-    input:checked + ul.rectangle-dropdown-menu {
+    #check:checked + ul.rectangle-dropdown-menu {
       display: block;
     }
     ul.rectangle-dropdown-menu {
@@ -57,14 +57,48 @@ header.container-change {
       width: calc(100% - 32px);
       padding: 0px 0px 0px 16px;
       li {
-        width: fit-content;
+        width: calc(100% - 16px);
         margin: 15px 0px;
         a {
           font-size: 14px;
           color: $white;
           text-decoration: none;
         }
-        ul {
+        .concept-check {
+          display: flex;
+          margin: 0px;
+          .plus {
+            display: inline-flex;
+            vertical-align: middle;
+            color: $white;
+            line-height: 1;
+            width: 1em;
+            height: 0.1em;
+            background: currentColor;
+            border-radius: 0.1em;
+            position: relative;
+            margin-left: auto;
+          }
+          .plus::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: inherit;
+            border-radius: inherit;
+            transform: rotate(90deg);
+          }
+        }
+        #plus-mrk {
+          display: none;
+        }
+        #plus-mrk:checked + ul.plus-dropdown-menu {
+          display: block;
+        }
+        ul.plus-dropdown-menu {
+          display: none;
           padding: 0px 0px 0px 12px;
         }
       }
