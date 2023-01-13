@@ -17,6 +17,7 @@ header.navbar {
         a {
           color: $white;
           font-size: 14px;
+          line-height: 20px;
         }
       }
       li:nth-child(2) {
@@ -53,13 +54,19 @@ header.navbar {
           margin: 35px 20px;
         }
         li:nth-child(2) {
+          display: block;
           ul {
             position: absolute;
             background-color: $black;
             top: 90px;
             left: 488px;
+            padding-top: 18px;
             li {
-              margin: 18px auto 18px 18px;
+              margin: 0px auto 36px 18px;
+              width: 220px;
+            }
+            li:last-child {
+              margin-bottom: 18px;
             }
           }
         }
