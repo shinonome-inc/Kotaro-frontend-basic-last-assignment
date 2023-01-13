@@ -1,0 +1,45 @@
+@use "../../variables" as *;
+header.navbar {
+  background-color: $black;
+  display: block;
+  padding-bottom: 0px;
+  a {
+    img {
+      width: 140px;
+      height: 24px;
+    }
+  }
+  div.contents {
+    ul.navbar-nav {
+      display: block;
+      margin-bottom: 0px;
+      li {
+        margin: 15px 0px;
+        a {
+          color: $white;
+          font-size: 14px;
+        }
+      }
+      li:nth-child(2) {
+        ul {
+          list-style: none;
+          margin-left: 12px;
+          padding-left: 0px;
+          li {
+            a {
+              padding: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and(min-width:$breakpoint-xl) {
+    display: flex;
+    div.contents {
+      ul.navbar-nav {
+        display: flex;
+      }
+    }
+  }
+}
