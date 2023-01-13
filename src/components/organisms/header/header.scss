@@ -5,8 +5,7 @@ header.navbar {
   padding-bottom: 0px;
   a {
     img {
-      width: 140px;
-      height: 24px;
+      width: 120px;
     }
   }
   div.contents {
@@ -35,10 +34,35 @@ header.navbar {
     }
   }
   @media screen and(min-width:$breakpoint-xl) {
+    background-color: $black_50;
     display: flex;
+    padding-top: 0px;
+    height: 90px;
+    width: 1200px;
+    a {
+      img {
+        width: 140px;
+        height: 24px;
+      }
+    }
     div.contents {
       ul.navbar-nav {
         display: flex;
+        margin-left: 257px;
+        li {
+          margin: 35px 20px;
+        }
+        li:nth-child(2) {
+          ul {
+            position: absolute;
+            background-color: $black;
+            top: 90px;
+            left: 488px;
+            li {
+              margin: 18px auto 18px 18px;
+            }
+          }
+        }
       }
     }
   }
