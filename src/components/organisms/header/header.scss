@@ -24,10 +24,10 @@ header.navbar {
     }
   }
   input + div.contents {
-    display: none;
+    display: block;
   }
   input:checked + .contents {
-    display: block;
+    display: none;
   }
   #check1 {
     display: none;
@@ -103,21 +103,40 @@ header.navbar {
   @media screen and(min-width:$breakpoint-xl) {
     background-color: $black_50;
     display: flex;
-    padding-top: 0px;
+    padding: 0px;
+    padding-right: 25px;
     height: 90px;
     width: 1200px;
     a {
+      margin-left: 30px;
       img {
         width: 140px;
         height: 24px;
       }
     }
+    label {
+      display: none;
+    }
+    input + div.contents {
+      display: none;
+    }
+    input:checked + .contents {
+      display: block;
+    }
     div.contents {
       ul.navbar-nav {
         display: flex;
         margin-left: 257px;
+        height: 90px;
         li {
           margin: 35px 20px;
+          justify-items: center;
+          a {
+            margin: 0px;
+          }
+        }
+        li:first-child {
+          margin-top: 35px;
         }
         li:nth-child(2) {
           display: block;
@@ -126,12 +145,21 @@ header.navbar {
             background-color: $black;
             top: 90px;
             left: 488px;
-            padding-top: 18px;
+            transition: all 0.2s ease;
             li {
-              margin: 0px auto 36px 18px;
+              display: flex;
+              height: 56px;
+              padding: 18px 0px 0px 18px;
               width: 220px;
+              margin: 0px;
+              a {
+                margin: 0px;
+              }
+              &:hover {
+                background-color: $orange_bistre;
+              }
             }
-            li:last-child {
+            &:last-child {
               margin-bottom: 18px;
             }
           }
