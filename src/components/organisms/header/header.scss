@@ -132,6 +132,9 @@ header.navbar {
     label {
       display: none;
     }
+    input {
+      display: none;
+    }
     input + div.contents {
       display: none;
     }
@@ -155,6 +158,18 @@ header.navbar {
         }
         li:nth-child(2) {
           display: block;
+          label#check3L {
+            margin: auto;
+            width: fit-content;
+            display: block;
+            float: none;
+          }
+          input#check3 ~ ul {
+            display: none;
+          }
+          input#check3:checked ~ ul {
+            display: block;
+          }
           ul {
             position: absolute;
             background-color: $black;
