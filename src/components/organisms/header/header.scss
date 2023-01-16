@@ -2,7 +2,7 @@
 header.navbar {
   background-color: $black;
   display: block;
-  padding-top: 0px;
+  padding-top: 4px;
   a {
     margin: 15px auto;
     padding: 0px;
@@ -48,10 +48,10 @@ header.navbar {
         margin-top: 19.72px;
       }
       li:nth-child(2) {
-        input + ul {
+        input ~ ul {
           display: none;
         }
-        input:checked + ul {
+        input:checked ~ ul {
           display: block;
         }
         #check2 {
@@ -81,6 +81,21 @@ header.navbar {
           border-radius: inherit;
           transform: rotate(90deg);
         }
+        input:checked + label .plus::before {
+          transform: rotate(0deg);
+        }
+        .circle {
+          position: absolute;
+          width: 2em;
+          height: 2em;
+          text-align: center;
+          line-height: 80px;
+          border-radius: 50%;
+          border: solid 1px $white;
+          top: 133px;
+          right: 23.4px;
+        }
+
         ul {
           list-style: none;
           margin-left: 12px;
