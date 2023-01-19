@@ -127,16 +127,10 @@ header.navbar {
         height: 24px;
       }
     }
-    label {
+    div.hamburger {
       display: none;
     }
-    input {
-      display: none;
-    }
-    input + div#contents {
-      display: block;
-    }
-    input:checked + #contents {
+    div.collapse {
       display: block;
     }
     div#contents {
@@ -153,18 +147,11 @@ header.navbar {
         li:first-child {
           margin-top: 35px;
         }
-        li:nth-child(2) {
+        li.first:nth-child(2) {
           display: block;
-          label#check3L {
-            margin: auto;
-            width: fit-content;
-            display: block;
-            float: none;
-          }
-          input#check3 ~ ul {
-            display: none;
-          }
-          input#check3:checked ~ ul {
+          margin: 0px;
+          padding: 35px 20px;
+          &:hover ul {
             display: block;
           }
           ul {
@@ -172,7 +159,6 @@ header.navbar {
             background-color: $black;
             top: 90px;
             left: 488px;
-            transition: all 0.2s ease;
             li {
               display: flex;
               height: 56px;
