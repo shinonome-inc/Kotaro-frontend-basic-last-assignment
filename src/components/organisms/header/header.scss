@@ -11,7 +11,7 @@ header.navbar {
       width: 120px;
     }
   }
-  label {
+  div.hamburger {
     width: 15px;
     margin: 22.5px 0px 22.5px auto;
     display: grid;
@@ -23,16 +23,16 @@ header.navbar {
       background-color: $white;
     }
   }
-  input + div.contents {
+  input + div#contents {
     display: block;
   }
-  input:checked + .contents {
+  input:checked + #contents {
     display: none;
   }
   #check1 {
     display: none;
   }
-  div.contents {
+  div#contents {
     transition: all 0.2s ease;
     ul.navbar-nav {
       display: block;
@@ -49,65 +49,52 @@ header.navbar {
         margin-top: 19.72px;
       }
       li:nth-child(2) {
-        #check3 {
-          display: none;
-        }
-        label#check3L {
-          width: fit-content;
-          margin: auto 0px;
-          display: block;
-          float: none;
-        }
-        input ~ ul {
-          display: none;
-        }
-        input:checked ~ ul {
-          display: block;
-        }
         #check2 {
           display: none;
         }
-
-        .plus {
-          display: inline-flex;
-          vertical-align: middle;
-          color: $white;
-          line-height: 1;
-          width: 1em;
-          height: 0.1em;
-          background: currentColor;
-          border-radius: 0.1em;
-          position: relative;
-          margin-left: auto;
-          top: -35px;
-          right: 16px;
-        }
-        .plus::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: inherit;
-          border-radius: inherit;
-          transform: rotate(90deg);
-        }
-        input:checked + label .plus::before {
+        input#check2:checked + label .plus-circle .plus::before {
           transform: rotate(0deg);
         }
-        .circle {
-          position: absolute;
-          width: 2em;
-          height: 2em;
-          text-align: center;
-          line-height: 80px;
-          border-radius: 50%;
-          border: solid 1px $white;
-          top: 133px;
-          right: 23.4px;
+        label {
+          div.plus-circle {
+            .plus {
+              display: inline-flex;
+              vertical-align: middle;
+              color: $white;
+              line-height: 1;
+              width: 1em;
+              height: 0.1em;
+              background: currentColor;
+              border-radius: 0.1em;
+              position: absolute;
+              margin-left: auto;
+              top: 149px;
+              right: 31px;
+            }
+            .plus::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: inherit;
+              border-radius: inherit;
+              transform: rotate(90deg);
+            }
+            .circle {
+              position: absolute;
+              width: 2em;
+              height: 2em;
+              text-align: center;
+              line-height: 80px;
+              border-radius: 50%;
+              border: solid 1px $white;
+              top: 133px;
+              right: 23.4px;
+            }
+          }
         }
-
         ul {
           list-style: none;
           margin-left: 12px;
@@ -146,13 +133,13 @@ header.navbar {
     input {
       display: none;
     }
-    input + div.contents {
+    input + div#contents {
       display: block;
     }
-    input:checked + .contents {
+    input:checked + #contents {
       display: block;
     }
-    div.contents {
+    div#contents {
       ul.navbar-nav {
         display: flex;
         margin-left: 229px;

@@ -2,19 +2,17 @@
   <a class="navbar-brand" href="#">
     <img src="../../../img/header.png" alt="" />
   </a>
-  <label for="check1">
+  <div class="hamburger" data-toggle="collapse" href="#contents">
     <div class="rectangle"></div>
     <div class="rectangle"></div>
     <div class="rectangle"></div>
-  </label>
-  <input type="checkbox" id="check1" checked />
-  <div class="contents" id="navbarSupportedContent">
+  </div>
+  <div class="collapse" id="contents">
     <ul class="navbar-nav me-auto mb-lg-0">
       <li class="nav-item">
         <a class="active" aria-current="page">HOME</a>
       </li>
       <li class="nav-item">
-        <input type="checkbox" id="check3" />
         <label for="check3" id="check3L">
           <a
             class="active"
@@ -28,10 +26,12 @@
         </label>
         <input type="checkbox" id="check2" />
         <label for="check2">
-          <div class="plus"></div>
-          <div class="circle"></div>
+          <div class="plus-circle" data-toggle="collapse" href="#detail">
+            <div class="plus"></div>
+            <div class="circle"></div>
+          </div>
         </label>
-        <ul aria-labelledby="navbarDropdown">
+        <ul class="collapse" id="detail" aria-labelledby="navbarDropdown">
           <li><a>ブログアーカイブ</a></li>
           <li><a>お知らせアーカイブ</a></li>
           <li><a>イベントアーカイブ</a></li>
