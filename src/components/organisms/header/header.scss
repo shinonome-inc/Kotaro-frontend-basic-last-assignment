@@ -13,7 +13,7 @@ header.navbar {
   }
   label {
     width: 15px;
-    margin: 22.5px 16px 22.5px auto;
+    margin: 22.5px 0px 22.5px auto;
     display: grid;
     float: right;
     gap: 3px;
@@ -33,6 +33,7 @@ header.navbar {
     display: none;
   }
   div.contents {
+    transition: all 0.2s ease;
     ul.navbar-nav {
       display: block;
       margin-bottom: 0px;
@@ -79,6 +80,7 @@ header.navbar {
           position: relative;
           margin-left: auto;
           top: -35px;
+          right: 16px;
         }
         .plus::before {
           content: "";
@@ -145,7 +147,7 @@ header.navbar {
       display: none;
     }
     input + div.contents {
-      display: none;
+      display: block;
     }
     input:checked + .contents {
       display: block;
@@ -153,7 +155,7 @@ header.navbar {
     div.contents {
       ul.navbar-nav {
         display: flex;
-        margin-left: 237px;
+        margin-left: 229px;
         height: 90px;
         li {
           margin: 35px 20px;
@@ -201,6 +203,9 @@ header.navbar {
               margin-bottom: 18px;
             }
           }
+        }
+        li:last-child {
+          margin-bottom: 0px;
         }
       }
     }
