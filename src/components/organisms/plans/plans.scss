@@ -1,0 +1,29 @@
+@use "../../variables" as *;
+
+section.plans {
+  margin-bottom: 35px;
+  .message {
+    padding: 0px 0px 56px;
+    h2 {
+      color: $orange_bistre;
+    }
+  }
+  .button {
+    margin: 24px auto;
+  }
+  @media screen and(min-width:$breakpoint-md) {
+    margin-bottom: 100px;
+    .message {
+      padding: 0px 0px 32px;
+    }
+    .plan-group {
+      display: flex;
+      .plan {
+        margin: 0px 15px;
+      }
+    }
+    .button {
+      margin: 45px auto;
+    }
+  }
+}
