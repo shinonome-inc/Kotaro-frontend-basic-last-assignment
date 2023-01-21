@@ -1,17 +1,26 @@
 {
-
-  "extends": ["development"],
+  "extends": [
+    "development"
+  ],
   "hints": {
     "compat-api/css": [
       "default",
       {
-        "ignore": ["width: fit-content"]
+        "ignore": [
+          "width: fit-content"
+        ]
       }
     ],
     "axe/name-role-value": [
       "default",
       {
         "link-name": "off"
+      }
+    ],
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
       }
     ]
   }
