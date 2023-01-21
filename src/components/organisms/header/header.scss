@@ -1,0 +1,188 @@
+@use "../../variables" as *;
+header.navbar {
+  background-color: $black;
+  display: block;
+  a {
+    margin: 11.72px auto;
+    padding: 0px;
+    text-decoration: none;
+    img {
+      width: 120px;
+    }
+  }
+  div.hamburger {
+    width: 15px;
+    margin: 19.5px 0px 22.5px auto;
+    display: grid;
+    float: right;
+    gap: 3px;
+    .rectangle {
+      width: 15px;
+      height: 3px;
+      background-color: $white;
+    }
+  }
+  input + div#contents {
+    display: block;
+  }
+  input:checked + #contents {
+    display: none;
+  }
+  #check1 {
+    display: none;
+  }
+  div#contents {
+    transition: all 0.2s ease;
+    ul.navbar-nav {
+      display: block;
+      margin-bottom: 0px;
+      li {
+        margin: 30px 0px;
+        a {
+          color: $white;
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+      li:first-child {
+        margin-top: 19.72px;
+      }
+      li:nth-child(2) {
+        #check2 {
+          display: none;
+        }
+        input#check2:checked + label .plus-circle .plus::before {
+          transform: rotate(0deg);
+        }
+        label {
+          div.plus-circle {
+            .plus {
+              display: inline-flex;
+              vertical-align: middle;
+              color: $white;
+              line-height: 1;
+              width: 1em;
+              height: 0.1em;
+              background: currentColor;
+              border-radius: 0.1em;
+              position: absolute;
+              margin-left: auto;
+              top: 149px;
+              right: 31px;
+            }
+            .plus::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: inherit;
+              border-radius: inherit;
+              transform: rotate(90deg);
+            }
+            .circle {
+              position: absolute;
+              width: 2em;
+              height: 2em;
+              text-align: center;
+              line-height: 80px;
+              border-radius: 50%;
+              border: solid 1px $white;
+              top: 133px;
+              right: 23.4px;
+            }
+          }
+        }
+        ul {
+          list-style: none;
+          margin-left: 12px;
+          padding-left: 0px;
+          li {
+            a {
+              padding: 0px;
+            }
+          }
+          li:first-child {
+            margin-top: 30px;
+          }
+          &:hover {
+            background-color: $black;
+          }
+        }
+      }
+      li:last-child {
+        margin-bottom: 7px;
+      }
+    }
+  }
+  @media screen and(min-width:$breakpoint-xl) {
+    background-color: $black_50;
+    display: flex;
+    padding: 0px;
+    padding-right: 30px;
+    width: 1200px;
+    a {
+      margin: 33px;
+      img {
+        width: 140px;
+        height: 24px;
+      }
+    }
+    div.hamburger {
+      display: none;
+    }
+    div.collapse {
+      display: block;
+    }
+    div#contents {
+      ul.navbar-nav {
+        display: flex;
+        margin-left: 229px;
+        height: 90px;
+        li {
+          margin: 35px 20px;
+          a {
+            margin: 0px;
+          }
+        }
+        li:first-child {
+          margin-top: 35px;
+        }
+        li.first:nth-child(2) {
+          display: block;
+          margin: 0px;
+          padding: 35px 20px;
+          &:hover ul {
+            display: block;
+          }
+          ul {
+            position: absolute;
+            background-color: $black;
+            top: 90px;
+            left: 488px;
+            li {
+              display: flex;
+              height: 56px;
+              padding: 18px 0px 0px 18px;
+              width: 220px;
+              margin: 0px;
+              a {
+                margin: 0px;
+              }
+              &:hover {
+                background-color: $orange_bistre;
+              }
+            }
+            &:last-child {
+              margin-bottom: 18px;
+            }
+          }
+        }
+        li:last-child {
+          margin-bottom: 31px;
+        }
+      }
+    }
+  }
+}
