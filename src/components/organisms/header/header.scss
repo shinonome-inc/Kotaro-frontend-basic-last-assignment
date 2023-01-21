@@ -12,7 +12,7 @@ header.navbar {
   }
   div.hamburger {
     width: 15px;
-    margin: 22.5px 0px 22.5px auto;
+    margin: 19.5px 0px 22.5px auto;
     display: grid;
     float: right;
     gap: 3px;
@@ -102,6 +102,9 @@ header.navbar {
             a {
               padding: 0px;
             }
+          }
+          li:first-child {
+            margin-top: 30px;
           }
           &:hover {
             background-color: $black;
