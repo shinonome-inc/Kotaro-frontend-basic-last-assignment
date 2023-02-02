@@ -1,6 +1,7 @@
 @use "../../variables" as *;
 @use "../../molecules/message/message.scss" as *;
 .about {
+  margin-bottom: 40px;
   @media screen and(min-width:$breakpoint-lg) {
     .img-group {
       display: flex;
