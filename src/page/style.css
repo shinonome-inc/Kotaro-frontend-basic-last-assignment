@@ -422,7 +422,7 @@ ul.plan:nth-child(even) li:last-child {
 }
 .footer .contact {
   background-color: #fff;
-  background-image: url(../../../img/footer.png);
+  background-image: url(./img/footer.png);
   background-repeat: no-repeat;
   background-size: 150px 25.7px;
   background-position: top 32px center;
