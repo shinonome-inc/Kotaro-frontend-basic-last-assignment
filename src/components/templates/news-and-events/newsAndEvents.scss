@@ -26,22 +26,24 @@
     }
   }
   @media screen and(min-width:$breakpoint-lg) {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    .news {
-      min-width: 0px;
-      flex: 1;
-      margin-bottom: 0px;
-    }
-    .events {
-      min-width: 0px;
-      flex: 1;
-      margin: 0px;
-      .event-list {
-        .event-card {
-          a {
-            height: 141px;
+    .container {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      .news {
+        min-width: 0px;
+        flex: 1;
+        margin-bottom: 0px;
+      }
+      .events {
+        min-width: 0px;
+        flex: 1;
+        margin: 0px;
+        .event-list {
+          .event-card {
+            a {
+              height: 141px;
+            }
           }
         }
       }
