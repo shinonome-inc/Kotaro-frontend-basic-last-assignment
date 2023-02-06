@@ -204,7 +204,7 @@ section {
 }
 .footer .contact {
   background-color: #fff;
-  background-image: url(../../../img/footer.png);
+  background-image: url(./img/footer.png);
   background-repeat: no-repeat;
   background-size: 150px 25.7px;
   background-position: top 32px center;
@@ -595,7 +595,7 @@ section.plans .button {
 }
 .top .img-group {
   position: relative;
-  background-image: url(../../../img/top.jpg);
+  background-image: url(./img/top.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
