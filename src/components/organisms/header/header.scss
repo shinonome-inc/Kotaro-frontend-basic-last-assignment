@@ -150,6 +150,9 @@ header.navbar {
           a {
             margin: 0px;
           }
+          a:hover {
+            color: $gray_nobel;
+          }
         }
         li:first-child {
           margin-top: 35px;
@@ -165,7 +168,7 @@ header.navbar {
             position: absolute;
             background-color: $black;
             top: 96px;
-            left: 488px;
+            left: 584px;
             li {
               display: flex;
               height: 56px;
