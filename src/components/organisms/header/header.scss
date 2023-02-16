@@ -159,16 +159,18 @@ header.navbar {
         }
         li.first:nth-child(2) {
           display: block;
+          width: 105px;
           margin: 0px;
           padding: 35px 20px;
           &:hover ul {
             display: block;
           }
           ul {
-            position: absolute;
+            position: relative;
             background-color: $black;
-            top: 96px;
-            left: 584px;
+            top: 10px;
+            left: -30px;
+            width: fit-content;
             li {
               display: flex;
               height: 56px;
