@@ -2,6 +2,7 @@
 @use "../../molecules/message/message.scss" as *;
 .about {
   @media screen and(min-width:$breakpoint-lg) {
+    margin-bottom: 100px;
     .img-group {
       display: flex;
       img {
@@ -11,6 +12,7 @@
     }
   }
   @media screen and(max-width:$breakpoint-lg) {
+    margin-bottom: 40px;
     .img-group {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -19,7 +21,6 @@
       }
     }
   }
-
   .message {
     background-color: $white_smoke;
     h2 {

@@ -120,8 +120,10 @@ header.navbar {
     background-color: $black_50;
     display: flex;
     padding: 0px;
-    padding-right: 30px;
-    width: 1200px;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    justify-content: center;
     a {
       margin: 33px;
       img {
@@ -134,6 +136,9 @@ header.navbar {
     }
     div.collapse {
       display: block;
+      .plus-circle {
+        display: none;
+      }
     }
     div#contents {
       ul.navbar-nav {
@@ -145,22 +150,27 @@ header.navbar {
           a {
             margin: 0px;
           }
+          a:hover {
+            color: $gray_nobel;
+          }
         }
         li:first-child {
           margin-top: 35px;
         }
         li.first:nth-child(2) {
           display: block;
+          width: 105px;
           margin: 0px;
           padding: 35px 20px;
           &:hover ul {
             display: block;
           }
           ul {
-            position: absolute;
+            position: relative;
             background-color: $black;
-            top: 90px;
-            left: 488px;
+            top: 10px;
+            left: -30px;
+            width: fit-content;
             li {
               display: flex;
               height: 56px;
